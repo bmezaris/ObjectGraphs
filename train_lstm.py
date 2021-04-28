@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # Andreas Goulas <goulasand@gmail.com> | first creation
+# Nikolaos Gkalelis <gkalelis@iti.gr> | 23/4/2021 | minor changes (main(), print, etc.)
 
 import argparse
 import time
