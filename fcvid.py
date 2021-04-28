@@ -1,4 +1,4 @@
-# Andreas Goulas <goulasand@gmail.com>
+# Andreas Goulas <goulasand@gmail.com> | first creation
 # Nikolaos Gkalelis <gkalelis@iti.gr> | 23/4/2021 | minor changes (add object label/class information, text processing, etc.)
 
 import os
