@@ -1,4 +1,4 @@
-# Andreas Goulas <goulasand@gmail.com>
+# Andreas Goulas <goulasand@gmail.com> | first creation
 
 import torch
 import torch.nn as nn
