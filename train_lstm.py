@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Andreas Goulas <goulasand@gmail.com>
+# Andreas Goulas <goulasand@gmail.com> | first creation
 
 import argparse
 import time
