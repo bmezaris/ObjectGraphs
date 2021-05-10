@@ -52,7 +52,9 @@ python test.py weights/<model name>.pt --dataset_root <dataset dir> [--dataset <
 ## Pre-extracted features
 
 To aid usage of our code, features extracted during our experiments are provided in our FTP server
-```ftp://multimedia2.iti.gr```
+```
+ftp://multimedia2.iti.gr
+```
 Access to the FTP server has been tested using Mozila Firefox and File Explorer ("Add a network location") in Windows 10.
 To request access information please send an email to: bmezaris@iti.gr, gkalelis@iti.gr.
 
