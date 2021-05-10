@@ -48,3 +48,25 @@ To evaluate a model, run
 ```
 python test.py weights/<model name>.pt --dataset_root <dataset dir> [--dataset <fcvid|ylimed>]
 ```
+
+## Pre-extracted features
+
+To aid usage of our code, features extracted during our experiments are provided in the following FTP server:
+
+ftp://multimedia2.iti.gr
+
+To request access information please send an email to: bmezaris@iti.gr, gkalelis@iti.gr
+
+The following data are stored in the server:
+
+* FCVID features extracted using Faster R-CNN-based object detector (~320 GB): FCVID.z01, FCVID.z02, FCVID.z03, FCVID.z04, FCVID.z05, FCVID.z06, FCVID.z07, FCVID.z08, FCVID.z09, FCVID.zip
+
+* YLIMED features extracted using Faster R-CNN-based object detector (~7 GB): YLI-MED.zip
+
+* ObjectGraph model trained end-to-end using FCVID features above (~2 GB): model-fcvid.zip
+
+* GCN standalone feature extractor trained using the FCVID features above (~70 MB): model-gcn.zip
+
+* FCVID features extracted using the trained FCVID GCN standalone feature extractor and the FCVID features above (~12.5 MB): feats_fcvid.zip
+
+* YLIMED features extracted using the trained FCVID GCN model part and the YLIMED features above (~300 MB): feats_ylimed.zip
