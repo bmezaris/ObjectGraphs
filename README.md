@@ -51,7 +51,7 @@ python test.py weights/<model name>.pt --dataset_root <dataset dir> [--dataset <
 
 ## Pre-extracted features
 
-To aid usage of our code, features extracted during our experiments are provided in our FTP server[Link](ftp://multimedia2.iti.gr). To request access information please send an email to: bmezaris@iti.gr, gkalelis@iti.gr.
+To aid usage of our code, features extracted during our experiments are provided in our FTP server [ftp](ftp://multimedia2.iti.gr). To request access information please send an email to: bmezaris@iti.gr, gkalelis@iti.gr.
 
 The data stored in the server are:
 * FCVID features extracted using Faster R-CNN-based object detector (~320 GB): FCVID.z01, FCVID.z02, FCVID.z03, FCVID.z04, FCVID.z05, FCVID.z06, FCVID.z07, FCVID.z08, FCVID.z09, FCVID.zip
