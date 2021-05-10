@@ -49,9 +49,9 @@ To evaluate a model, run
 python test.py weights/<model name>.pt --dataset_root <dataset dir> [--dataset <fcvid|ylimed>]
 ```
 
-## Pre-extracted features
+## Extracted features
 
-To aid usage of our code, features extracted during our experiments are provided in the following FTP server:
+Features extracted during our experiments are provided in the following FTP server:
 ```
 ftp://multimedia2.iti.gr
 ```
@@ -59,9 +59,9 @@ To request access information please send an email to: bmezaris@iti.gr, gkalelis
 Access to the FTP server has been tested using Mozila Firefox and File Explorer ("Add a network location") in Windows 10.
 
 The data stored in the server are:
-* FCVID features extracted using Faster R-CNN-based object detector (~320 GB): FCVID.z01, FCVID.z02, FCVID.z03, FCVID.z04, FCVID.z05, FCVID.z06, FCVID.z07, FCVID.z08, FCVID.z09, FCVID.zip
-* YLIMED features extracted using Faster R-CNN-based object detector (~7 GB): YLI-MED.zip
+* FCVID features extracted using Faster R-CNN-based object detector to be placed in the FCVID dataset root directory (~320 GB): FCVID.z01, FCVID.z02, FCVID.z03, FCVID.z04, FCVID.z05, FCVID.z06, FCVID.z07, FCVID.z08, FCVID.z09, FCVID.zip
+* YLIMED features extracted using Faster R-CNN-based object detector to be placed in the YLIMED dataset root directory (~7 GB): YLI-MED.zip
 * Model trained end-to-end using the FCVID features above (~2 GB): model-fcvid.zip
 * GCN standalone feature extractor trained using the FCVID features above (~70 MB): model-gcn.zip
-* FCVID features extracted using the trained FCVID GCN standalone feature extractor and the FCVID features above (~12.5 MB): feats_fcvid.zip
-* YLIMED features extracted using the trained FCVID GCN model part and the YLIMED features above (~300 MB): feats_ylimed.zip
+* FCVID features extracted using the trained FCVID GCN standalone feature extractor; to be placed in the ```feats/``` directory (~12.5 MB): feats_fcvid.zip
+* YLIMED features extracted using the trained FCVID GCN standalone feature extractor; to be placed in the ```feats/``` directory (~300 MB): feats_ylimed.zip
