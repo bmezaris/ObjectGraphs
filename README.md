@@ -55,8 +55,8 @@ To aid usage of our code, features extracted during our experiments are provided
 ```
 ftp://multimedia2.iti.gr
 ```
-Access to the FTP server has been tested using Mozila Firefox and File Explorer ("Add a network location") in Windows 10.
 To request access information please send an email to: bmezaris@iti.gr, gkalelis@iti.gr.
+Access to the FTP server has been tested using Mozila Firefox and File Explorer ("Add a network location") in Windows 10.
 
 The data stored in the server are:
 * FCVID features extracted using Faster R-CNN-based object detector (~320 GB): FCVID.z01, FCVID.z02, FCVID.z03, FCVID.z04, FCVID.z05, FCVID.z06, FCVID.z07, FCVID.z08, FCVID.z09, FCVID.zip
