@@ -51,7 +51,7 @@ python test.py weights/<model name>.pt --dataset_root <dataset dir> [--dataset <
 
 ## Pre-extracted features
 
-To aid usage of our code, features extracted during our experiments are provided in our FTP server
+To aid usage of our code, features extracted during our experiments are provided in the following FTP server:
 ```
 ftp://multimedia2.iti.gr
 ```
