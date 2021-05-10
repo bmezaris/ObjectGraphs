@@ -63,5 +63,5 @@ The data stored in the server are:
 * YLIMED features extracted using Faster R-CNN-based object detector to be placed in the YLIMED dataset root directory (~7 GB): YLI-MED.zip
 * Model trained end-to-end using the FCVID features above (~2 GB): model-fcvid.zip
 * GCN standalone feature extractor trained using the FCVID features above (~70 MB): model-gcn.zip
-* FCVID features extracted using the trained FCVID GCN standalone feature extractor; to be placed in the ```feats/``` directory (~12.5 MB): feats_fcvid.zip
+* FCVID features extracted using the trained FCVID GCN standalone feature extractor; to be placed in the ```feats/``` directory (~12.5 GB): feats_fcvid.zip
 * YLIMED features extracted using the trained FCVID GCN standalone feature extractor; to be placed in the ```feats/``` directory (~300 MB): feats_ylimed.zip
