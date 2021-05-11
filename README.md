@@ -54,7 +54,7 @@ python test.py weights/<model name>.pt --dataset_root <dataset dir> [--dataset <
 To run the code for the different datasets (FCVID, YLI-MED) use the corresponding settings described in the paper.
 For instance, to train the model end-to-end and evaluate it using the FCVID dataset, run
 ```
-python train.py --dataset_root <fcvid root directory> --dataset fcvid --num_epochs 60 --step_size 50 --lr 1e-4 --batch_size 64
+python train.py --dataset_root <FCVID root directory> --dataset fcvid --num_epochs 60 --step_size 50 --lr 1e-4 --batch_size 64
 ```
 ```
 python test.py weights/model-fcvid-060.pt --dataset_root <FCVID root directory> --dataset fcvid
