@@ -52,12 +52,22 @@ python test.py weights/<model name>.pt --dataset_root <dataset dir> [--dataset <
 ## Usage
 
 To run the code for the different datasets (FCVID, YLIMED) use the corresponding settings described in the paper.
-For instance, to train the model end-to-end and evaluate it using the FCVID dataset:
+For instance, to train the model end-to-end and evaluate it using the FCVID dataset, run:
 ```
 python train.py --dataset_root <fcvid root directory> --dataset fcvid --num_epochs 60 --step_size 50 --lr 1e-4 --batch_size 64
 ```
 ```
 python test.py weights\model-fcvid-060.pt --dataset_root <fcvid root directory> --dataset fcvid
+```
+To extract the GCN standalone feature extractor from the FCVID trained model, use the GCN standalone feature extractor to extract frame level YLI-MED features and train the classifier head, run:
+```
+python save_gcn.py weights/model-fcvid-060.pt model-gcn.pt  --dataset fcvid
+```
+```
+python extract.py model-gcn.pt --dataset_root <YLI-MED root directory> --dataset ylimed
+```
+```
+python train_lstm.py --feats_folder feats --dataset ylimed --num_epochs 30 --lr 1e-4 --batch_size 16 --gamma 0.9
 ```
 
 ## Provided features
