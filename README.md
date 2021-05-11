@@ -10,7 +10,7 @@ This repository hosts the code and data for our paper: N. Gkalelis, A. Goulas, D
 
 ## Video preprocessing
 
-Before training our method on any video dataset, the videos must be preprocessed and converted to an appropriate format for efficient data loading (In our work, we sample xxx frames per video; on each frame, a variant of the Faster R-CNN object detector is used [3,4] for object detection, and an xxx network is used for extracting a representation of each entire frame as well as each object region). Following video preprocessing, the dataset root directory must contain the following two subdirectories:
+Before training our method on any video dataset, the videos must be preprocessed and converted to an appropriate format for efficient data loading (In our work, we sample 9 frames per video; on each frame, a variant of the Faster R-CNN object detector is used [3,4] for object detection, and an ResNet-152 network is used for extracting a representation of each entire frame as well as each object region). Following video preprocessing, the dataset root directory must contain the following two subdirectories:
 * ```R152_global/```: Numpy arrays of size 9x2048 containing the global frame feature vectors for each video (the 9 frames, times the 2048-element vector for each frame).
 * ```R152/```: Numpy arrays of size 9x50x2048 containing the appearance feature vectors of the detected frame objects for each video (the 9 frames, times the 50 most-promiment objects identified by the obejct detector, times a 2048-element vector for each object bounding box).
 
