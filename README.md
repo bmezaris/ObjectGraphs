@@ -61,7 +61,7 @@ python train.py --dataset_root <FCVID root directory> --dataset fcvid --num_epoc
 ```
 python test.py weights/model-fcvid-060.pt --dataset_root <FCVID root directory> --dataset fcvid
 ```
-To extract the GCN standalone feature extractor from the FCVID trained model, use the GCN standalone feature extractor to extract frame level YLI-MED features and train the LSTM classifier head, run
+To extract the GCN standalone feature extractor from the FCVID trained model, use the GCN standalone feature extractor to extract frame-level YLI-MED features and train the LSTM classifier head, run
 ```
 python save_gcn.py weights/model-fcvid-060.pt model-gcn.pt  --dataset fcvid
 ```
