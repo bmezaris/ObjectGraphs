@@ -78,7 +78,6 @@ Features extracted during our experiments are provided in the following FTP serv
 ```
 ftp://multimedia2.iti.gr
 ```
-Access to the FTP server has been tested using Mozila Firefox and File Explorer ("Add a network location") in Windows 10.
 To request access creadentials for the ftp please send an email to: bmezaris@iti.gr, gkalelis@iti.gr.
 
 The data stored in the ftp server are:
