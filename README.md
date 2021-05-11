@@ -8,11 +8,11 @@
 
 ## Preparation
 
-Before training, the datasets must be preprocessed and converted to an appropriate format for efficient data loading (here a variant of the Faster R-CNN object detector is used [3,4]). The dataset root directory must contain the following two subdirectories.
+Before training, the datasets must be preprocessed and converted to an appropriate format for efficient data loading (here a variant of the Faster R-CNN object detector is used [3,4]). The dataset root directory must contain the following two subdirectories:
 * ```R152_global/```: Numpy arrays of size 9x2048 containing the global frame feature vectors for each video.
 * ```R152/```: Numpy arrays of size 9x50x2048 containing the appearance feature vectors of the detected frame objects for each video.
 
-In addition, the root directory must contain the associated dataset metadata.
+In addition, the root directory must contain the associated dataset metadata:
 * The FCVID root directory must contain a ```materials/``` subdirectory with the official training/test split _FCVID\_VideoName\_TrainTestSplit.txt_ and the video event labels _FCVID\_Label.txt_.
 * The YLI-MED root directory must contain the official training/test split _YLI-MED\_Corpus\_v.1.4.txt_.
 
