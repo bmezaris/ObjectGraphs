@@ -52,14 +52,14 @@ python test.py weights/<model name>.pt --dataset_root <dataset dir> [--dataset <
 ## Usage
 
 To run the code for the different datasets (FCVID, YLI-MED) use the corresponding settings described in the paper.
-For instance, to train the model end-to-end and evaluate it using the FCVID dataset, run:
+For instance, to train the model end-to-end and evaluate it using the FCVID dataset, run
 ```
 python train.py --dataset_root <fcvid root directory> --dataset fcvid --num_epochs 60 --step_size 50 --lr 1e-4 --batch_size 64
 ```
 ```
 python test.py weights\model-fcvid-060.pt --dataset_root <fcvid root directory> --dataset fcvid
 ```
-To extract the GCN standalone feature extractor from the FCVID trained model, use the GCN standalone feature extractor to extract frame level YLI-MED features and train the classifier head, run:
+To extract the GCN standalone feature extractor from the FCVID trained model, use the GCN standalone feature extractor to extract frame level YLI-MED features and train the LSTM classifier head, run
 ```
 python save_gcn.py weights/model-fcvid-060.pt model-gcn.pt  --dataset fcvid
 ```
@@ -84,8 +84,8 @@ The data stored in the server are:
 * YLIMED features extracted using Faster R-CNN-based object detector to be placed in the YLIMED dataset root directory (~7 GB): YLI-MED.zip
 * Model trained end-to-end using the FCVID features above (~2 GB): model-fcvid.zip
 * GCN standalone feature extractor trained using the FCVID features above (~70 MB): model-gcn.zip
-* FCVID features extracted using the trained FCVID GCN standalone feature extractor; to be placed in the ```feats/``` directory (~12.5 GB): feats_fcvid.zip
-* YLI-MED features extracted using the trained FCVID GCN standalone feature extractor; to be placed in the ```feats/``` directory (~300 MB): feats_ylimed.zip
+* FCVID frame features extracted using the trained FCVID GCN standalone feature extractor; to be placed in the ```feats/``` directory (~12.5 GB): feats_fcvid.zip
+* YLI-MED frame features extracted using the trained FCVID GCN standalone feature extractor; to be placed in the ```feats/``` directory (~300 MB): feats_ylimed.zip
 
 ## License and Citation
 
