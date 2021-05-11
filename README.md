@@ -74,7 +74,7 @@ python train_lstm.py --feats_folder feats --dataset ylimed --num_epochs 30 --lr 
 
 ## Provided features
 
-Features extracted during our experiments are provided in the following FTP server:
+Features extracted during our experiments are provided in the following ftp server:
 ```
 ftp://multimedia2.iti.gr
 ```
