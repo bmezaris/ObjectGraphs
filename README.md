@@ -8,7 +8,7 @@
 
 ## Preparation
 
-Before training, the datasets must be preprocessed and converted to an appropriate format for efficient data loading. The dataset root directory must contain the following two subdirectories.
+Before training, the datasets must be preprocessed and converted to an appropriate format for efficient data loading (e.g using Faster R-CNN-based object detector [3,4]). The dataset root directory must contain the following two subdirectories.
 * ```R152_global/```: Numpy arrays of size 9x2048 containing the global frame feature vectors for each video.
 * ```R152/```: Numpy arrays of size 9x50x2048 containing the appearance feature vectors of the detected frame objects for each video.
 
@@ -68,7 +68,7 @@ The data stored in the server are:
 
 ## License and Citation
 
-The code of ObjectGraphs method is provided for academic, non-commercial use only. Please also check for any restrictions applied in the code parts and datasets used here from other sources (e.g. provided datasets [1,2], Bottom-up Faster R-CNN [3], etc.). If you find the ObjectGraphs code useful in your work, please cite the following publication where this approach is described:
+The code of ObjectGraphs method is provided for academic, non-commercial use only. Please also check for any restrictions applied in the code parts and datasets used here from other sources (e.g. provided datasets [1,2], etc.). If you find the ObjectGraphs code useful in your work, please cite the following publication where this approach is described:
 
 N. Gkalelis, A. Goulas, D. Galanopoulos, V. Mezaris, "ObjectGraphs: Using Objects and a Graph Convolutional Network for the Bottom-up Recognition and Explanation of Events in Video", Proc. 2nd Int. Workshop on Large Scale Holistic Video Understanding (HVU) at the IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR), June 2021.
 
@@ -91,8 +91,10 @@ This work was supported by the EU Horizon 2020 programme under grant agreements 
 
 ## References
 
-[1] YY.-G. Jiang, Z. Wu, et al. Exploiting feature and class relationships in video categorization with regularized deep neural networks. IEEE Trans. Pattern Anal. Mach. Intell., 40(2):352–364, 2018
+[1] YY.-G. Jiang, Z. Wu et al. Exploiting feature and class relationships in video categorization with regularized deep neural networks. IEEE Trans. Pattern Anal. Mach. Intell., 40(2):352–364, 2018
 
-[2] J. Bernd, D. Borth, et al. The YLI-MED corpus: Characteristics, procedures, and plans. CoRR, abs/1503.04250, 2015.
+[2] J. Bernd, D. Borth et al. The YLI-MED corpus: Characteristics, procedures, and plans. CoRR, abs/1503.04250, 2015.
 
-[3] P. Anderson, X. He, et al. Bottom-up and top-down attention for image captioning and visual question answering. In Proc. ICVGIP, pages 6077–6086, Hyderabad, India, Dec. 2018
+[3] P. Anderson, X. He et al. Bottom-up and top-down attention for image captioning and visual question answering. In Proc. ICVGIP, pages 6077–6086, Hyderabad, India, Dec. 2018
+
+[4] S. Ren, K. He et al. Faster R-CNN: Towards real-time object detection with region proposal networks. In Proc. NIPS, volume 28, 2015.
