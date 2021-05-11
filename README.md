@@ -1,16 +1,18 @@
 # Video Event Detection with GCNs
 
-## Requirements
+This repository hosts the code and data for our paper: N. Gkalelis, A. Goulas, D. Galanopoulos, V. Mezaris, "ObjectGraphs: Using Objects and a Graph Convolutional Network for the Bottom-up Recognition and Explanation of Events in Video", Proc. 2nd Int. Workshop on Large Scale Holistic Video Understanding (HVU) at the IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR), June 2021.
+
+## Code requirements
 
 * numpy
 * PyTorch
 * scikit-learn
 
-## Preparation
+## Video preprocessing
 
-Before training, the datasets must be preprocessed and converted to an appropriate format for efficient data loading (here a variant of the Faster R-CNN object detector is used [3,4]). The dataset root directory must contain the following two subdirectories:
-* ```R152_global/```: Numpy arrays of size 9x2048 containing the global frame feature vectors for each video.
-* ```R152/```: Numpy arrays of size 9x50x2048 containing the appearance feature vectors of the detected frame objects for each video.
+Before training our method on any video dataset, the videos must be preprocessed and converted to an appropriate format for efficient data loading (In our work, we sample xxx frames per video; on each frame, a variant of the Faster R-CNN object detector is used [3,4] for object detection, and an xxx network is used for extracting a representation of each entire frame as well as each object region). Following video preprocessing, the dataset root directory must contain the following two subdirectories:
+* ```R152_global/```: Numpy arrays of size 9x2048 containing the global frame feature vectors for each video (the 9 frames, times the 2048-element vector for each frame).
+* ```R152/```: Numpy arrays of size 9x50x2048 containing the appearance feature vectors of the detected frame objects for each video (the 9 frames, times the 50 most-promiment objects identified by the obejct detector, times a 2048-element vector for each object bounding box).
 
 In addition, the root directory must contain the associated dataset metadata:
 * The FCVID root directory must contain a ```materials/``` subdirectory with the official training/test split _FCVID\_VideoName\_TrainTestSplit.txt_ and the video event labels _FCVID\_Label.txt_.
@@ -22,7 +24,7 @@ To train a new model end-to-end, run
 ```
 python train.py --dataset_root <dataset dir> [--dataset <fcvid|ylimed>]
 ```
-By default, the model weights are saved in the ```weights/``` directory. The GCN can be used as a standalone feature extractor. To extract the GCN weights from the full model, run
+By default, the model weights are saved in the ```weights/``` directory. The trained GCN can also be used as a standalone feature extractor. To extract the GCN weights from the full model, run
 ```
 python save_gcn.py weights/<model name>.pt model-gcn.pt  [--dataset <fcvid|ylimed>]
 ```
@@ -33,7 +35,7 @@ python extract.py model-gcn.pt --dataset_root <dataset dir> [--dataset <fcvid|yl
 ```
 The extracted features will be saved in the ```feats/``` directory.
 
-To train the classifier head on the extracted frame features, run
+To train the classifier head on the GCN-extracted frame features, run
 ```
 python train_lstm.py --feats_folder <feats dir> [--dataset <fcvid|ylimed>]
 ```
@@ -77,7 +79,7 @@ Features extracted during our experiments are provided in the following FTP serv
 ftp://multimedia2.iti.gr
 ```
 Access to the FTP server has been tested using Mozila Firefox and File Explorer ("Add a network location") in Windows 10.
-To request access information please send an email to: bmezaris@iti.gr, gkalelis@iti.gr.
+To request access creadentials please send an email to: bmezaris@iti.gr, gkalelis@iti.gr.
 
 The data stored in the server are:
 * FCVID features extracted using Faster R-CNN-based object detector to be placed in the FCVID dataset root directory (~320 GB): FCVID.z01, FCVID.z02, FCVID.z03, FCVID.z04, FCVID.z05, FCVID.z06, FCVID.z07, FCVID.z08, FCVID.z09, FCVID.zip
@@ -89,7 +91,7 @@ The data stored in the server are:
 
 ## License and Citation
 
-The code of ObjectGraphs method is provided for academic, non-commercial use only. Please also check for any restrictions applied in the code parts and datasets used here from other sources (e.g. provided datasets [1,2], etc.). If you find the ObjectGraphs code useful in your work, please cite the following publication where this approach is described:
+The code of our ObjectGraphs method is provided for academic, non-commercial use only. Please also check for any restrictions applied in the code parts and datasets used here from other sources (e.g. provided datasets [1,2], etc.). If you find the ObjectGraphs code useful in your work, please cite the following publication where this approach was proposed:
 
 N. Gkalelis, A. Goulas, D. Galanopoulos, V. Mezaris, "ObjectGraphs: Using Objects and a Graph Convolutional Network for the Bottom-up Recognition and Explanation of Events in Video", Proc. 2nd Int. Workshop on Large Scale Holistic Video Understanding (HVU) at the IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR), June 2021.
 
