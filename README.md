@@ -8,7 +8,7 @@
 
 ## Preparation
 
-Before training, the datasets must be preprocessed and converted to an appropriate format for efficient data loading (e.g using Faster R-CNN-based object detector [3,4]). The dataset root directory must contain the following two subdirectories.
+Before training, the datasets must be preprocessed and converted to an appropriate format for efficient data loading (here a variant of the Faster R-CNN object detector is used [3,4]). The dataset root directory must contain the following two subdirectories.
 * ```R152_global/```: Numpy arrays of size 9x2048 containing the global frame feature vectors for each video.
 * ```R152/```: Numpy arrays of size 9x50x2048 containing the appearance feature vectors of the detected frame objects for each video.
 
