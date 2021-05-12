@@ -56,7 +56,7 @@ parser.add_argument('--gamma', type=float, default=1, help='learning rate decay 
 parser.add_argument('--num_epochs', type=int, default=10, help='number of epochs to train')
 parser.add_argument('--batch_size', type=int, default=16, help='batch size')
 parser.add_argument('--num_workers', type=int, default=0, help='number of workers for data loader; set always to zero!')
-parser.add_argument('--eval_interval', type=int, default=1, help='interval for evaluating models (epochs)')
+parser.add_argument('--eval_interval', type=int, default=50, help='interval for evaluating models (epochs)')
 parser.add_argument('-v', '--verbose', action='store_true', help='show details')
 args = parser.parse_args()
 
