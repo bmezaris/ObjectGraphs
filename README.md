@@ -103,7 +103,7 @@ N. Gkalelis, A. Goulas, D. Galanopoulos, V. Mezaris, "ObjectGraphs: Using Object
 
 Bibtex:
 ```
-@INPROCEEDINGS{FSDP_ICMEW2020,
+@INPROCEEDINGS{OBJGRAPHS_CVPRW2021,
                AUTHOR    = "N. Gkalelis and A. Goulas and D. Galanopoulos and V. Mezaris",
                TITLE     = "ObjectGraphs: Using Objects and a Graph Convolutional Network for the Bottom-up Recognition and Explanation of Events in Video",
                BOOKTITLE = "Proc. IEEE CVPR Workshops (CVPRW)",
