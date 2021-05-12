@@ -71,6 +71,13 @@ python extract.py model-gcn.pt --dataset_root <YLI-MED root directory> --dataset
 ```
 python train_lstm.py --feats_folder feats --dataset ylimed --num_epochs 30 --lr 1e-4 --batch_size 16 --gamma 0.9
 ```
+To use the FCVID GCN standalone feature extractor to extract frame-level FCVID features and train the LSTM classifier head, run
+```
+python extract.py model-gcn.pt --dataset_root <FCVID root directory> --dataset fcvid
+```
+```
+python train_lstm.py --feats_folder feats --dataset fcvid --num_epochs 500 --lr 1e-5 --batch_size 512 --gamma 1
+```
 
 ## Provided features
 
