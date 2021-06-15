@@ -101,16 +101,17 @@ The code of our ObjectGraphs method is provided for academic, non-commercial use
 
 N. Gkalelis, A. Goulas, D. Galanopoulos, V. Mezaris, "ObjectGraphs: Using Objects and a Graph Convolutional Network for the Bottom-up Recognition and Explanation of Events in Video", Proc. 2nd Int. Workshop on Large Scale Holistic Video Understanding (HVU) at the IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR), June 2021.
 
+Full-text: https://openaccess.thecvf.com/content/CVPR2021W/HVU/papers/Gkalelis_ObjectGraphs_Using_Objects_and_a_Graph_Convolutional_Network_for_the_CVPRW_2021_paper.pdf
+
 Bibtex:
 ```
-@INPROCEEDINGS{OBJGRAPHS_CVPRW2021,
-               AUTHOR    = "N. Gkalelis and A. Goulas and D. Galanopoulos and V. Mezaris",
-               TITLE     = "ObjectGraphs: Using Objects and a Graph Convolutional Network for the Bottom-up Recognition and Explanation of Events in Video",
-               BOOKTITLE = "Proc. IEEE CVPR Workshops (CVPRW)",
-               ADDRESS   = "",
-               PAGES     = "",
-               MONTH     = "June",
-               YEAR      = "2021"
+@InProceedings{Gkalelis_2021_CVPR,
+    author    = {Gkalelis, Nikolaos and Goulas, Andreas and Galanopoulos, Damianos and Mezaris, Vasileios},
+    title     = {ObjectGraphs: Using Objects and a Graph Convolutional Network for the Bottom-Up Recognition and Explanation of Events in Video},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2021},
+    pages     = {3375-3383}
 }
 ```
 
