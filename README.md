@@ -97,7 +97,9 @@ The data stored in the ftp server are:
 
 ## License and Citation
 
-The code of our ObjectGraphs method is provided for academic, non-commercial use only. Please also check for any restrictions applied in the code parts and datasets used here from other sources (e.g. provided datasets [1,2], etc.). If you find the ObjectGraphs code useful in your work, please cite the following publication where this approach was proposed:
+The code of our ObjectGraphs method is provided for academic, non-commercial use only. Please also check for any restrictions applied in the code parts and datasets used here from other sources (e.g. provided datasets [1,2], etc.). This software is provided by the authors "as is" and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the authors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.
+
+If you find the ObjectGraphs code useful in your work, please cite the following publication where this approach was proposed:
 
 N. Gkalelis, A. Goulas, D. Galanopoulos, V. Mezaris, "ObjectGraphs: Using Objects and a Graph Convolutional Network for the Bottom-up Recognition and Explanation of Events in Video", Proc. 2nd Int. Workshop on Large Scale Holistic Video Understanding (HVU) at the IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR), June 2021.
 
